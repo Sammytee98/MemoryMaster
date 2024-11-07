@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  letter-spacing: 2px;
+}
+body{
+  width: 100%;
+  background-color: blue;
+  margin: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  padding: ;
+  margin:  0 auto;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  place-items: center;
+  row-gap: 1.5em;
+  margin-top: 3em;
+  padding: 1em;
+}
+
+h1#level-title {
+  text-align: center;
+  font-size: clamp(2em, 3vw, 2.5em);
+  font-family: cursive;
+  color: white;
+}
+
+.btn {
+  width: 150px;
+  height: 150px;
+  border: 10px solid black;
+  border-radius: 20px;
+}
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+.purple {
+  background-color: purple;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.pressed {
+  box-shadow: 0 0 20px white;
+  background-color: grey;
+}
+
+@media (max-width: 530px) {
+  .row {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1em;
+    margin-top: 2em;
+  }
+}
